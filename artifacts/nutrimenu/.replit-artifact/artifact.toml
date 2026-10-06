@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "NutriMenu"
+description = "NutriMenu helps restaurants publish clear nutrition information and gives customers a modern menu experience to discover and compare dishes."
+version = "1.0.0"
+id = "artifacts/nutrimenu"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25496
+
+[services.development]
+run = "pnpm --filter @workspace/nutrimenu run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/nutrimenu", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/nutrimenu/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25496"
+BASE_PATH = "/"

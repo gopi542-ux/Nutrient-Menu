@@ -1,0 +1,1 @@
+- [NutriMenu backend boundary](nutrimenu-backend.md) — first UI phase uses browser storage; add the explicitly deferred Supabase backend in a later phase.

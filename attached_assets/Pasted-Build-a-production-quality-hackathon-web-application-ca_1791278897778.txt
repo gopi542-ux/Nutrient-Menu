@@ -1,0 +1,182 @@
+Build a production-quality hackathon web application called NutriMenu.
+
+Problem statement:
+"Create a system that allows restaurants to display nutritional information for menu items."
+
+Tech stack:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Lucide icons
+- Recharts
+- Supabase will be added as the backend later
+
+For now, focus on creating the complete frontend architecture and polished UI.
+
+The application has two main experiences:
+
+1. Restaurant Owner Dashboard
+2. Customer-facing Restaurant Menu
+
+Create these pages:
+
+PUBLIC:
+/
+ /login
+ /register
+ /menu/:restaurantSlug
+ /menu/:restaurantSlug/item/:itemSlug
+ /menu/:restaurantSlug/compare
+
+RESTAURANT:
+ /dashboard
+ /dashboard/menu
+ /dashboard/menu/new
+ /dashboard/menu/:id/edit
+ /dashboard/categories
+ /dashboard/analytics
+ /dashboard/qr-menu
+ /dashboard/restaurant
+ /dashboard/settings
+
+Design the application like a modern startup product, NOT a basic college CRUD project.
+
+Product name:
+NutriMenu
+
+Tagline:
+"Know Your Food. Choose Better."
+
+Landing page:
+- Hero section
+- Problem statement
+- Solution
+- Features
+- How it works
+- Restaurant benefits
+- Customer benefits
+- CTA
+- Footer
+
+Restaurant dashboard:
+- Sidebar navigation
+- Overview cards
+- Total menu items
+- Published items
+- Menu views
+- Average calories
+- Average protein
+- Recent menu items
+- Analytics charts
+
+Menu management:
+- Search
+- Category filter
+- Publish/unpublish
+- Edit
+- Delete
+- Add menu item
+
+Menu item form:
+- Name
+- Description
+- Price
+- Serving size
+- Category
+- Image
+- Calories
+- Protein
+- Carbohydrates
+- Fat
+- Fiber
+- Sugar
+- Sodium
+- Cholesterol
+- Saturated fat
+- Dietary options
+- Allergens
+
+Customer menu:
+- Restaurant header
+- Search
+- Categories
+- Food cards
+- Price
+- Calories
+- Protein
+- Nutrition badges
+- Dietary badges
+
+Nutrition card:
+Show:
+Calories
+Protein
+Carbs
+Fat
+Fiber
+Sugar
+Sodium
+
+Automatically display badges such as:
+HIGH PROTEIN
+LOW CALORIE
+LOW SUGAR
+LOW SODIUM
+VEGETARIAN
+VEGAN
+GLUTEN FREE
+
+Customer filters:
+- Vegetarian
+- Vegan
+- Gluten free
+- Under 300 calories
+- Under 500 calories
+- High protein
+- Low sugar
+- Low sodium
+
+Comparison page:
+Allow customers to compare up to 3 dishes and compare:
+Calories
+Protein
+Carbs
+Fat
+Fiber
+Sugar
+Sodium
+
+QR menu page:
+Show a QR code that points to the restaurant's public menu.
+
+Use realistic demo data for a restaurant called:
+"GreenBite Kitchen"
+
+Create at least 12 demo dishes.
+
+Make the application:
+- responsive
+- mobile friendly
+- accessible
+- visually polished
+- fast
+- professional
+
+Use reusable React components.
+
+Do NOT use a backend yet.
+Use a clean mock data/service layer so Supabase can be connected in the next phase.
+
+Do not stop at a landing page.
+Implement all major pages and navigation.
+
+After implementation:
+1. Run the application.
+2. Fix TypeScript errors.
+3. Fix build errors.
+4. Make sure all routes work.
+5. Make sure the UI is responsive.
+
+Do not ask unnecessary questions. Start implementing.
