@@ -1,1 +1,1 @@
-- [NutriMenu backend boundary](nutrimenu-backend.md) — first UI phase uses browser storage; add the explicitly deferred Supabase backend in a later phase.
+- [NutriMenu Supabase boundary](nutrimenu-backend.md) — keep restaurant data in the user's Supabase project and rely on client-side RLS, not a service-role key or replacement database.
